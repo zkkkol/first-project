@@ -3,7 +3,6 @@
     src: url(fonts/barlow/Barlow-Regular.otf);
 }
 html, body {
-  height: 100%;
   margin: 0;
 }
 body {
@@ -13,21 +12,12 @@ body {
     color: #2A4A5C;
 }
 .main {
-    height: 100vh; 
-    min-height: 600px;
-    min-width: 100px;
     display: flex;
     flex-direction: row;
     padding: 30px;
 }
-@media (max-width: 800px) {
-  .main {
-    flex-direction: column;
-  } 
-}
 .img {
     width: 50%;
-    height: 100vh;
 }
 .logo {
     position: absolute;
@@ -35,15 +25,14 @@ body {
     left: 50px;
 }
 .registration {
-    justify-content: center;
     background-color: white;
     display: flex;
     padding: 0 0 0 30px;
     width: 50%;
+    max-width: 600px;
 }
 .registration form {
-    width: 50%;
-    max-height: 400px;
+    max-height: 1000px;
 }
 .img img {
   width: 100%;
@@ -82,9 +71,8 @@ img {
     display: flex;
     font-size: 0.9rem;
     gap: 5px;
-    width: 100%;
     max-width: 200px;
-    margin: auto;
+    margin: 0 120px 0 120px;
 }
 hr {
     flex: 1;
@@ -96,9 +84,9 @@ hr {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
     align-items: center;
-    margin: 30px 0;
+    justify-content: center;
+    margin: 0;
 }
 .input-email, .input-phone {
     width: 180px;
@@ -106,11 +94,23 @@ hr {
     border: lightgrey solid 0.5px;
 }
 
+.input-phone input, .input-email input {
+    border: none;
+    margin-top: 10px;
+}
+.input-phone input, .input-email input:focus {
+    outline: none;
+}
 .email {
     border-radius: 0 3px 0 0;
 }
 .phone {
     border-radius: 0 0 3px 3px;
+}
+.label-one {
+    font-size: 10px;
+    position: absolute;
+    margin-left: 2px;
 }
 .input-email, .input-phone:hover {
     border-left: 1.5px solid #3698FB;
@@ -145,7 +145,12 @@ hr {
     border: none;
     padding: 10px 50px;
     margin-top: 30px;
+    margin-bottom: 20px;
     background-color: #3698FB;
     color: white;
     font-weight: bold;
+}
+.simbol {
+    color: gray;
+    font-size: 14px;
 }

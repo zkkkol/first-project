@@ -37,23 +37,27 @@
                     </div>
                     <br>
                     <div class="other">
-                            <label for="email" class="label-one"></label>
-                            <input class="input-email" type="email" class="email" id="email" value="gus.goodwin@gmail.com">
-                            <label for="phone" class="label-two"></label>
-                            <input class="input-phone" type="phone" class="phone" id="phone">
+                        <div class="input-email">
+                            <label for="email" class="label-one">Email</label>
+                            <input type="email" class="email" id="email" value="gus.goodwin@gmail.com">
+                        </div>
+                        <div class="input-phone" >
+                            <label for="phone" class="label-one">Phone</label>
+                            <input type="phone" class="phone" id="phone">
+                        </div>
                     </div>
                     <h3>What type of investor are you?</h3>
                     <p>Select the type of investore you are below.</p>
                     <br>
                     <div class="investor">
                         <input type="radio" id="individual" name="investor" checked>
-                        <label for="individual">Individual</label>
+                        <label for="individual">Individual <span class="simbol">ⓘ</span></label>
                         <input type="radio" id="business" name="investor" checked>
-                        <label for="business">Business</label>
+                        <label for="business">Business <span class="simbol">ⓘ</span></label>
                         <input type="radio" id="ira" name="investor" checked>
-                        <label for="ira">IRA</label>
+                        <label for="ira">IRA <span class="simbol">ⓘ</span></label>
                         <input type="radio" id="trust" name="investor" checked>
-                        <label for="trust">Trust</label>
+                        <label for="trust">Trus <span class="simbol">ⓘ</span></label>
                     </div>
 
                         <div class="information">
@@ -64,7 +68,7 @@
                         I agree to the terms and receiving notifications from iintoo 
                         <a href="https://www.iintoo.com/terms-of-use/" target="_blank">view full terms</a>
                     </label><br>
-                    <input type="submit" value="Create Account" class="account">
+                    <button class="account">Create Account</button>
                 </form>
             </div>
         </div>
