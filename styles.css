@@ -18,6 +18,7 @@ body {
 }
 .img {
     width: 50%;
+    min-width: 400px;
 }
 .logo {
     position: absolute;
@@ -29,6 +30,7 @@ body {
     display: flex;
     padding: 0 0 0 30px;
     width: 50%;
+    min-width: 400px;
 }
 .registration form {
     max-height: 1000px;
@@ -143,6 +145,7 @@ hr {
 }
 .account {
     border: none;
+    font-family: barlow;
     padding: 10px 50px;
     margin-top: 30px;
     margin-bottom: 20px;
